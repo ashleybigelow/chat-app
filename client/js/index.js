@@ -8,5 +8,5 @@ form.addEventListener("submit", (e) => {
   console.log(name);
   const room = e.target.elements.room.value;
   console.log(room);
-  window.location.replace(`http://localhost:3000/chat.html?username=${name}&room=${room}`);
+  window.location.replace(`${window.location.href}chat.html?username=${name}&room=${room}`);
 });
