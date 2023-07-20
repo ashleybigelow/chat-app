@@ -43,7 +43,7 @@ io.on("connection", (socket) => {
   socket.on("disconnect", () =>{ 
     const user = removeUser(socket.id);
     if (user) {
-      io.to(user.room).emit("message", formatMessage("Bot", `user has left the chat`));
+      io.to(user.room).emit("message", formatMessage("Bot", `${user.name} has left the chat`));
       const users = getUsers(user.room);
       io.to(user.room).emit("userList", (users));
     }

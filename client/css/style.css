@@ -12,6 +12,23 @@ html{
 	background: var(--dark_green_op);
 }
 
+h2{
+	font-size: 15px;
+	color: var(--light_green);
+}
+
+ul {
+	text-align: center;
+	list-style-position: inside;
+}
+
+li{
+	color: var(--light_green);
+	font-size: 15px;
+	list-style-type: none;
+	margin-left: 0px;
+}
+
 /*Formatting for the index page*/
 
 .main_box{
@@ -109,20 +126,23 @@ html{
 	border-radius: 10px;
 	color: var(--dark_green);
 	width: 350px;
-	height: 80px;
 	text-align: left;
 	margin-bottom: 10px;
+	margin-right: 300px;
+	display: inline-block;
 }
 
 .user_message{
 	background-color: rgba(255, 255, 255, 0.9);
 	border-radius: 10px;
 	color: var(--dark_green);
-	width: 350px;
-	height: 80px;
+	inline-size: 350px;
 	text-align: left;
 	margin-bottom: 10px;
 	margin-left: 300px;
+	display: inline-block;
+	overflow-wrap: break-word;
+	white-space: initial;
 }
 
 .time_name{
@@ -145,5 +165,6 @@ html{
 
 .text{
 	font-size: 20px;
-	line-height: 0;
+	line-height: 1.2em;
+	padding: 1px;
 }
