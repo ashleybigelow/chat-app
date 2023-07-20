@@ -7,7 +7,7 @@ import {addUser, getUser, removeUser, getUsers} from "./data/users.js";
 
 const __dirname = path.resolve();
 
-const PORT = 3000 || process.env.PORT;
+const PORT = process.env.PORT || 3000;
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {'pingInterval': 45000});
