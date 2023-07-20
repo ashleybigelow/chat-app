@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--Title-->
+      <H1 class="room-title">Chat Room</H1>
+      <!--This is the -->
+      <div class="chat-grid">
+        <div class="chat-main">
+          <div class="chat-sidebar">
+            <h3>Room Name:</h3>
+            <h2 id="room-name"></h2>
+            <h3><i class="fas fa-users"></i> Users</h3>
+            <ul id="users"></ul>
+          </div>
+        </div>
+        <div class="chat-messages">
+          <!--
+          <div class = "message">
+            <div class = "time_name">
+              <p class="time">3:57 am</p> 
+              <p class="name">Ashley</p>
+            </div>
+            <p class = "text"> This is the message </p>
+          </div>
+          -->
+        </div>
+        <div class="form-container">
+          <form id="form">
+            <input class = "chat-input" id="msg" type="text" placeholder="Enter Message" required autocomplete="off"></input>
+            <button class="btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
